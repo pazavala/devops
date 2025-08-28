@@ -1,5 +1,7 @@
-exports.fibonacci = function(n) {
+exports.factorial = function(n) {
     if(n==0 || n==1)
         return n;
-    return this.fibonacci(n-1) + this.fibonacci(n-2);
+    if(n < 0)
+        return undefined;
+    return this.factorial(n-1) * n;
 }
